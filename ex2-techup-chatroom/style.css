@@ -1,1 +1,61 @@
-/* Start coding here */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --chat-green: #09be09;
+  --chat-grey: #808080;
+  --chat-white_grey: #e7e3e3;
+  --chat-x: #bebebe;
+}
+
+header {
+  background-color: #808080;
+  padding: 1rem;
+  color: white;
+  font-size: 2rem;
+}
+
+.box {
+  margin: 0 15px;
+}
+.box-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.box-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+span {
+  background-color: var(--chat-green);
+  width: 200px;
+  padding: 10px;
+  border-radius: 30px;
+  margin: 5px 0;
+}
+
+.chat-2 {
+  background-color: var(--chat-white_grey);
+  position: relative;
+}
+
+.chat-5,
+.chat-6 {
+  background-color: var(--chat-grey);
+}
+
+.chat-3 {
+  background-color: var(--chat-x);
+  border-radius: 50%;
+  padding: 5px;
+  color: white;
+  position: absolute;
+  top: 150px;
+  right: 8px;
+}
