@@ -1,1 +1,85 @@
-/* Start coding here */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.head {
+    color: white;
+    background-color: gray;
+    width: 100vw;
+    height: 70px;
+}
+
+h1 {
+    padding: 10px;
+}
+
+.chatbox {
+    display: flex;
+}
+
+.message-1 {
+    margin-top: 30px;
+    margin-left: auto;
+    width: 150px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: green;
+    display: flex;
+    justify-content: start;
+}
+
+.message-2 {
+    position: relative;
+    margin-top: 15px;
+    margin-left: auto;
+    width: 150px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: rgb(201, 198, 198);
+    z-index: 1;
+}
+
+.x {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(128, 128, 128,0.5);
+    text-align: center;
+    display: inline-block;
+    position:absolute;
+    right: 1px;
+    top: 150px;
+    z-index: 2;
+}
+
+.emoji-1 {
+    margin-top: 15px;
+    margin-left: auto;
+    width: 150px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: green;
+}
+
+.emoji-2 {
+    width: 150px;
+    height: 25px;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: gray;
+}
+
+.emoji-3 {
+    margin-top: 15px;
+    width: 150px;
+    height: 25px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color:gray;
+}
+

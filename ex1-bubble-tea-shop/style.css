@@ -1,5 +1,45 @@
 body {
   font-family: "Kanit";
+  background-color: black;
 }
 
-/* Start coding here */
+.container {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+img {
+  border: 5px solid white;
+}
+
+.img-overlay::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: linear-gradient(to top, black, transparent);
+  z-index: 1;
+}
+  
+.shop-name {
+  position: absolute;
+  bottom: 320px;
+  left: 640px;
+  font-size: x-large;
+}
+
+.location-zone {
+  width: 100px;
+  height: 30px;
+  background-color: gray;
+  position: absolute;
+  top: 350px;
+  right: 625px;
+  text-align: center;
+}
