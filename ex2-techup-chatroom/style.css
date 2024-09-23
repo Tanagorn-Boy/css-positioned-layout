@@ -1,61 +1,81 @@
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
-:root {
-  --chat-green: #09be09;
-  --chat-grey: #808080;
-  --chat-white_grey: #e7e3e3;
-  --chat-x: #bebebe;
-}
-
-header {
+.top-chatbox {
+  height: 50px;
   background-color: #808080;
-  padding: 1rem;
-  color: white;
-  font-size: 2rem;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.box {
-  margin: 0 15px;
+p {
+  font-size: 26px;
+  color: white;
 }
-.box-1 {
+
+.chat-person-1 {
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
   align-items: flex-end;
+  margin: 50px;
 }
 
-.box-2 {
+.box-text-1,
+.box-text-3 {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  background-color: #09be09;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.box-text-2 {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  background-color: #e7e3e3;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+.text-1,
+.text-2,
+.text-3 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+/* >>>>>>>> Section person 2 <<<<<<<< */
+
+.chat-person-2 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-span {
-  background-color: var(--chat-green);
-  width: 200px;
-  padding: 10px;
-  border-radius: 30px;
-  margin: 5px 0;
+  align-items: flex-start;
+  margin: 50px;
 }
 
-.chat-2 {
-  background-color: var(--chat-white_grey);
+.box-text-4,
+.box-text-5 {
   position: relative;
+  width: 200px;
+  height: 40px;
+  background-color: #808080;
+  margin: 5px;
+  border-radius: 20px;
 }
 
-.chat-5,
-.chat-6 {
-  background-color: var(--chat-grey);
-}
-
-.chat-3 {
-  background-color: var(--chat-x);
-  border-radius: 50%;
-  padding: 5px;
-  color: white;
+.text-4,
+.text-5 {
   position: absolute;
-  top: 150px;
-  right: 8px;
+  left: 10px;
+  top: 10px;
 }
